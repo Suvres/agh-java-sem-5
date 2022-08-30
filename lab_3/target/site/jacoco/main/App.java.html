@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>App.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab_3</a> &gt; <a href="index.source.html" class="el_package">main</a> &gt; <span class="el_source">App.java</span></div><h1>App.java</h1><pre class="source lang-java linenums">package main;
+
+import main.Exception.Lab3Exception;
+import main.zad13.zad13;
+import main.zad14.zad14;
+import main.zad15.zad15;
+import main.zad50.Node;
+import main.zad50.zad50;
+import main.zad51.zad51;
+import main.zad56.zad56;
+import main.zad70.zad70;
+import main.zad74.zad74;
+import main.zad76.zad76;
+import main.zad79.zad79;
+
+/**
+ * Hello world!
+ *
+ */
+<span class="nc" id="L20">public class App </span>
+{
+    public static void main( String[] args )
+    {
+<span class="nc" id="L24">        System.out.println(&quot;\n\n&quot;);</span>
+        // zadanie 13
+        try {
+<span class="nc" id="L27">            System.out.printf(&quot;Zad13 : %s\n&quot;, zad13.zadanie(&quot;abccbba&quot;, 2));</span>
+<span class="nc" id="L28">        } catch (Lab3Exception e) {}</span>
+
+<span class="nc" id="L30">        System.out.printf(&quot;Zad14 : %.3f\n&quot;, zad14.zadanie(10000000));</span>
+<span class="nc" id="L31">        System.out.printf(&quot;Zad15 : %d\n&quot;, zad15.zadanie(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}));</span>
+
+
+
+<span class="nc" id="L35">        Node d = new Node(&quot;3&quot;);</span>
+<span class="nc" id="L36">        Node e = new Node(&quot;2&quot;);</span>
+<span class="nc" id="L37">        Node f = new Node(&quot;4&quot;);</span>
+<span class="nc" id="L38">        Node g = new Node(&quot;5&quot;);</span>
+
+<span class="nc" id="L40">        Node b = new Node(&quot;+&quot;);</span>
+<span class="nc" id="L41">        b.left = d;</span>
+<span class="nc" id="L42">        b.right = e;</span>
+
+<span class="nc" id="L44">        Node c = new Node(&quot;+&quot;);</span>
+<span class="nc" id="L45">        c.left = f;</span>
+<span class="nc" id="L46">        c.right = g;</span>
+
+<span class="nc" id="L48">        Node a = new Node(&quot;*&quot;);</span>
+<span class="nc" id="L49">        a.left = b;</span>
+<span class="nc" id="L50">        a.right = c;</span>
+
+<span class="nc" id="L52">        System.out.printf(&quot;Zad50 : %d\n&quot;, zad50.zadanie(a));</span>
+
+<span class="nc" id="L54">        System.out.println(&quot;Karty:&quot;);</span>
+<span class="nc" id="L55">        int[] s = zad51.zadanie();</span>
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        for (int i = 0; i &lt; s.length; i++) {</span>
+<span class="nc" id="L57">            System.out.printf(&quot;[%d] =&gt; %d\n&quot;, i, s[i]);</span>
+        }
+<span class="nc" id="L59">        System.out.println(&quot;&quot;);</span>
+<span class="nc" id="L60">        int[][] matrix = {</span>
+                {0,1,1},
+                {1,0,1},
+                {1,1,0},
+        };
+
+
+<span class="nc" id="L67">        System.out.printf(&quot;Zad56 : %s\n&quot;, zad56.zadanie(matrix, 4));</span>
+<span class="nc" id="L68">        System.out.printf(&quot;Zad70 : %s\n&quot;, zad70.zadanie(4));</span>
+<span class="nc" id="L69">        System.out.printf(&quot;Zad74 : %s\n&quot;, zad74.zadanie(6, 12));</span>
+<span class="nc" id="L70">        System.out.printf(&quot;Zad76 : %s\n&quot;, zad76.zadanie(new String[]{&quot;cba&quot;, &quot;daf&quot;, &quot;ghi&quot;}));</span>
+<span class="nc" id="L71">        System.out.printf(&quot;Zad79 : %s\n&quot;, zad79.zadanie(new int[]{10,5,7}));</span>
+
+<span class="nc" id="L73">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

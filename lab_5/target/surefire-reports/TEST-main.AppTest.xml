@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="main.AppTest" time="0.023" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5/target/test-classes:/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5/target/classes:/home/suvres/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/suvres/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="Unknown"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-16-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5/target/surefire/surefirebooter1557312772258893928.jar /home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5/target/surefire 2021-11-14T23-39-47_248-jvmRun1 surefire4274163161453012664tmp surefire_07891024526003833590tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5/target/test-classes:/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5/target/classes:/home/suvres/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/suvres/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/suvres"/>
+    <property name="user.language" value="pl"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-16-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5/target/surefire/surefirebooter1557312772258893928.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="16.0.1+9-Ubuntu-120.04"/>
+    <property name="user.name" value="suvres"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-90-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/suvres/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="Unknown"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="user.dir" value="/home/suvres/Dokumenty/AGH/sprawozdania/suvres/semestr5/java/lab_5"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="16.0.1+9-Ubuntu-120.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="main.AppTest" time="0.001"/>
+</testsuite>

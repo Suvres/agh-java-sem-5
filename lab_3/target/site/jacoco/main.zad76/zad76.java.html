@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>zad76.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab_3</a> &gt; <a href="index.source.html" class="el_package">main.zad76</a> &gt; <span class="el_source">zad76.java</span></div><h1>zad76.java</h1><pre class="source lang-java linenums">package main.zad76;
+
+<span class="nc" id="L3">public class zad76 {</span>
+    public static int zadanie(String[] matrix) {
+<span class="fc bfc" id="L5" title="All 2 branches covered.">        if(matrix == null) {</span>
+<span class="fc" id="L6">            return 0;</span>
+        }
+
+<span class="fc bfc" id="L9" title="All 2 branches covered.">        if(matrix.length == 1) {</span>
+<span class="fc" id="L10">            return 0;</span>
+        }
+
+<span class="fc" id="L13">        int colDrop = 0;</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        for(int i = 0; i &lt; matrix[0].toCharArray().length; i++) {</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">            for(int j = 1; j &lt; matrix.length; j++) {</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">                if(matrix[j].toCharArray()[i] &lt; matrix[j - 1].toCharArray()[i]) {</span>
+<span class="fc" id="L17">                    colDrop++;</span>
+                }
+            }
+        }
+
+<span class="fc" id="L22">        return colDrop;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

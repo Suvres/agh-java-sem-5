@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>zad13.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab_3</a> &gt; <a href="index.source.html" class="el_package">main.zad13</a> &gt; <span class="el_source">zad13.java</span></div><h1>zad13.java</h1><pre class="source lang-java linenums">package main.zad13;
+
+import main.Exception.Lab3Exception;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+<span class="nc" id="L9">public class zad13 {</span>
+
+    public static String zadanie(String s, int k ) throws Lab3Exception {
+
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        if(s == null) {</span>
+<span class="fc" id="L14">            throw new Lab3Exception(&quot;String jest pusty&quot;);</span>
+        }
+
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if(s.length() &lt;= k) {</span>
+<span class="fc" id="L18">            return s;</span>
+        }
+
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        if(k == 1){</span>
+<span class="fc" id="L22">            return String.valueOf(s.charAt(0));</span>
+        }
+
+<span class="fc" id="L25">        String candidate = s;</span>
+<span class="fc" id="L26">        int distinct_char = 0;</span>
+<span class="fc" id="L27">        ArrayList&lt;Character&gt; seen_char = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L28">        String remain_string = &quot;&quot;;</span>
+
+
+<span class="fc" id="L31">        char first_letter = s.charAt(0);</span>
+<span class="fc" id="L32">        int sec_letter = 0;</span>
+
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        while (s.charAt(sec_letter) == first_letter) {</span>
+<span class="fc" id="L35">            sec_letter++;</span>
+        }
+
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">        for(int i = 0; i &lt; s.toCharArray().length; i++) {</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">            if(!seen_char.contains(s.charAt(i))) {</span>
+<span class="fc" id="L40">                seen_char.add(s.charAt(i));</span>
+<span class="fc" id="L41">                distinct_char++;</span>
+            }
+
+<span class="fc bfc" id="L44" title="All 2 branches covered.">            if (distinct_char &gt; k) {</span>
+<span class="fc" id="L45">                candidate = s.substring(0, i);</span>
+<span class="fc" id="L46">                remain_string = s.substring(sec_letter);</span>
+<span class="fc" id="L47">                break;</span>
+            }
+
+        }
+
+<span class="fc" id="L52">        String long_s = zadanie(remain_string, k);</span>
+<span class="fc" id="L53">        String long_substring = &quot;&quot;;</span>
+
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if(candidate.length() &lt; long_s.length()) {</span>
+<span class="fc" id="L56">            long_substring = long_s;</span>
+        } else {
+<span class="fc" id="L58">            long_substring = candidate;</span>
+        }
+
+<span class="fc" id="L61">        return long_substring;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

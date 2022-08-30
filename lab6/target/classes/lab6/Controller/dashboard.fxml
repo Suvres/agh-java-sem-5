@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<BorderPane fx:controller="lab6.Controller.DashboardController"
+            xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets bottom="25"/>
+    </padding>
+
+    <top>
+        <HBox style="-fx-background-color: gray;">
+            <padding>
+                <Insets top="25" right="25" left="25" bottom="25"/>
+            </padding>
+
+            <Text fx:id="username" style="-fx-color: white;"/>
+            <Text fx:id="admin"/>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox>
+            <padding>
+                <Insets top="25" right="25" left="25" bottom="25"/>
+            </padding>
+
+            <Text text="Przedmioty"/>
+            <HBox>
+                <padding>
+                    <Insets top="10" left="10" right="10" bottom="10"/>
+                </padding>
+
+                <Label text="Szukaj">
+                    <HBox.margin>
+                        <Insets right="5"/>
+                    </HBox.margin>
+                </Label>
+
+                <TextField fx:id="searchPane"/>
+
+            </HBox>
+            <ListView fx:id="courses" onMouseClicked="#clicked"/>
+            <HBox>
+                <Label text="Końcowa średnia ocen: "/>
+                <Text text="" fx:id="marksAvg"/>
+            </HBox>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox>
+            <padding>
+                <Insets top="10" left="10" right="10" bottom="10"/>
+            </padding>
+            <Button text="Zmień dane"
+                    onMouseClicked="#change"/>
+        </HBox>
+    </bottom>
+</BorderPane>
